@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你的名字 - 个人主页</title>
+    <!-- 引入Bootstrap简化样式（无需本地下载，直接引用CDN） -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* 自定义样式，让页面更美观 */
+        body {
+            background-color: #f8f9fa;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        .profile-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin-top: 50px;
+        }
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #e9ecef;
+            margin-bottom: 20px;
+        }
+        .contact-link {
+            color: #0d6efd;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .contact-link:hover {
+            color: #0a58ca;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 profile-card text-center">
+                <!-- 头像：替换为你的头像URL（可上传到仓库或用图床链接） -->
+                <img src="https://avatars.githubusercontent.com/u/你的GitHub用户ID?v=4" alt="头像" class="avatar">
+                <!-- 姓名：需修改 -->
+                <h1>张三</h1>
+                <!-- 简介：需修改 -->
+                <p class="text-muted fs-5">前端爱好者 | 编程学习者 | 持续成长中</p>
+                <hr>
+                <!-- 个人介绍：需修改 -->
+                <p class="text-start">
+                    大家好，我是张三，一名热爱编程的新手开发者。<br>
+                    目前正在学习HTML/CSS/JavaScript，喜欢分享技术笔记和学习心得。<br>
+                    我的目标是成为一名全栈开发者，持续探索技术的边界。
+                </p>
+                <hr>
+                <!-- 联系方式：需修改 -->
+                <div class="contact">
+                    <h5>联系方式</h5>
+                    <a href="https://github.com/你的GitHub用户名" class="contact-link">GitHub</a>
+                    <a href="mailto:你的邮箱@xxx.com" class="contact-link">邮箱</a>
+                    <a href="https://blog.csdn.net/你的CSDN账号" class="contact-link">CSDN</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入Bootstrap的JS（可选，这里仅为兼容） -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
